@@ -114,7 +114,12 @@ nav a::after{content:'';position:absolute;left:0;bottom:0;width:0;height:1px;bac
 nav a:hover::after{width:100%}
 .nav-toggle{display:none}
 .apply-mini{display:none}
-@media(max-width:880px){nav{display:none}.nav-toggle{display:block;font-size:.78rem;letter-spacing:.2em}}
+@media(max-width:880px){
+  nav{display:none}
+  .nav-toggle{display:block;font-size:.78rem;letter-spacing:.2em;cursor:pointer;position:relative;z-index:1000}
+  header.nav-open nav{display:flex;position:fixed;inset:0;flex-direction:column;justify-content:center;align-items:center;gap:1.9rem;background:rgba(22,24,29,.97);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);font-size:1.25rem;letter-spacing:.22em;z-index:950}
+  header.nav-open nav a{padding-bottom:6px}
+}
 
 /* ヒーロー */
 .hero{position:relative;height:100vh;min-height:620px;overflow:hidden;display:flex;align-items:flex-end}
@@ -296,6 +301,47 @@ footer{background:#0f1115;color:var(--haku);padding:clamp(3rem,6vh,4.5rem) clamp
 .foot-bottom{max-width:1240px;margin:1.8rem auto 0;display:flex;justify-content:space-between;font-size:.74rem;letter-spacing:.1em;color:rgba(236,234,228,.5);flex-wrap:wrap;gap:.5rem}
 .foot-bottom .en{font-family:var(--en)}
 
+/* スマホ：各セクションを1画面に収まりやすく（余白・画像・行間を圧縮） */
+@media(max-width:600px){
+  .hero{min-height:560px}
+  .wrap{padding:2.6rem clamp(1.2rem,4vw,3rem)}
+  .intro h2{line-height:1.55;margin-bottom:1.2rem}
+  .intro p{font-size:.92rem;margin-bottom:.9rem;line-height:1.85}
+  .stats-head{margin-bottom:1.6rem}
+  .stat{padding:1.5rem 1.2rem}
+  .stat .lbl{margin-top:.6rem}
+  .stat .jp-main{margin-top:.5rem}
+  .stat .jp-desc{margin-top:.45rem;line-height:1.7}
+  .work .wrap{gap:1.5rem}
+  .work h2{margin-bottom:1rem;line-height:1.4}
+  .work p{margin-bottom:.85rem}
+  .work-img img{aspect-ratio:16/10}
+  .benefits-head{margin-bottom:1.6rem}
+  .benefits-grid{grid-template-columns:1fr 1fr;gap:.8rem}
+  .benefit{padding:1.2rem 1.1rem}
+  .benefit .no{margin-bottom:.7rem}
+  .benefit h3{font-size:1.05rem;margin-bottom:.55rem}
+  .benefit p{font-size:.84rem;line-height:1.75}
+  .benefit.feature h3{font-size:1.15rem}
+  .gallery img{height:clamp(140px,40vw,200px)}
+  .day h2{margin-bottom:1.6rem}
+  .tl{padding-bottom:1.4rem}
+  .voice-head{margin-bottom:1.3rem}
+  .voice-grid{gap:.8rem}
+  .vc{display:grid;grid-template-columns:88px 1fr;align-items:stretch}
+  .vc .ph{aspect-ratio:auto;height:100%}
+  .vc .ph img{height:100%;object-position:center 22%}
+  .vc .body{padding:.85rem 1rem}
+  .vc .meta{margin-bottom:.4rem;padding-bottom:.4rem}
+  .vc .meta .nm{font-size:1rem}
+  .vc .q{font-size:.82rem;line-height:1.6}
+  .vc .q strong{font-size:.92rem;margin-bottom:.3rem}
+  .company h2{margin-bottom:1.5rem}
+  .cta h2{margin-bottom:1rem}
+  .cta .lead{margin-bottom:1.8rem}
+  .cta-btns{gap:.8rem}
+  .btn{padding:1rem 1.6rem}
+}
 @media(prefers-reduced-motion:reduce){
   *{animation:none!important;transition:none!important}
   .hero h1 .line span{transform:none}
@@ -456,21 +502,21 @@ footer{background:#0f1115;color:var(--haku);padding:clamp(3rem,6vh,4.5rem) clamp
         <div class="ph"><img src="images/代表取締役.jpg" alt="代表取締役のポートレート"></div>
         <div class="body">
           <div class="meta"><span class="nm">代表取締役</span><span class="yr">President</span></div>
-          <div class="q"><strong>「選んで良かった」と言われる会社へ</strong>心に留めているのは「職人気質」。美しい足場を打ち上げ、誇りを持って他の職人の安全を守る。社員も、その家族も、私には等しく大切です。関わるすべての方に「選んで良かった」と言ってもらえる会社を目指します。</div>
+          <div class="q"><strong>「選んで良かった」と言われる会社へ</strong>大事にしているのは「職人気質」。美しい足場を打ち、誇りを持って仲間の安全を守る。社員も、その家族も、私には等しく大切です。関わる皆に「選んで良かった」と言われる会社を目指します。</div>
         </div>
       </div>
       <div class="vc">
         <div class="ph"><img src="images/社員2.jpg" alt="社員1のポートレート"></div>
         <div class="body">
           <div class="meta"><span class="nm">社員1</span><span class="yr">10th year</span></div>
-          <div class="q"><strong>稼げるし、休める</strong>前は別の業界にいましたが、給料も休みも風見の方が良かった。社員旅行が家族の分まで出るのも驚きました。長く続けられる会社だと思います。</div>
+          <div class="q"><strong>稼げるし、休める</strong>前職より、給料も休みも風見の方が良かった。社員旅行が家族の分まで出るのも驚き。長く続けられる会社です。</div>
         </div>
       </div>
       <div class="vc">
         <div class="ph"><img src="images/社員1.jpg" alt="社員2のポートレート"></div>
         <div class="body">
           <div class="meta"><span class="nm">社員2</span><span class="yr">6th year</span></div>
-          <div class="q"><strong>仲間がいいから、続く</strong>20代が多くて、現場の雰囲気が良いです。きつい時も声を掛け合える仲間がいる。組み上げた足場を見上げる瞬間が、毎回気持ちいいです。</div>
+          <div class="q"><strong>仲間がいいから、続く</strong>20代が多く、現場の雰囲気が良い。きつい時も声を掛け合える仲間がいる。組んだ足場を見上げる瞬間が、毎回気持ちいい。</div>
         </div>
       </div>
     </div>
@@ -565,6 +611,17 @@ document.querySelectorAll('.countup').forEach(el=>cuObs.observe(el));
 const heroBg=document.getElementById('heroBg');
 const hdr=document.querySelector('header');
 window.addEventListener('scroll',()=>{const y=window.scrollY;if(y<window.innerHeight){heroBg.style.transform='translateY('+y*.4+'px)'}hdr.classList.toggle('scrolled',y>60)},{passive:true});
+// モバイルメニュー：MENUで開閉／リンクを押したら閉じる
+const navToggle=document.querySelector('.nav-toggle');
+if(navToggle){
+  const closeNav=()=>{hdr.classList.remove('nav-open');navToggle.textContent='MENU';document.body.style.overflow='';};
+  navToggle.addEventListener('click',()=>{
+    const open=hdr.classList.toggle('nav-open');
+    navToggle.textContent=open?'CLOSE':'MENU';
+    document.body.style.overflow=open?'hidden':'';
+  });
+  hdr.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',closeNav));
+}
 </script>
 </body>
 </html>
