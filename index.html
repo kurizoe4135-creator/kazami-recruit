@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>鳶職人の求人｜福岡・糸島の足場工事【株式会社風見】未経験歓迎</title>
+<title>福岡・糸島の鳶・足場工事 求人｜未経験OK・月給25万円〜【株式会社風見】</title>
 <link rel="icon" type="image/png" href="images/logo-mark.png">
 <link rel="apple-touch-icon" href="images/logo-mark.png">
-<meta name="description" content="福岡・糸島で足場とび職人を募集中。月給25万円以上、完全週休2日制、道具・交通費・社用車支給、社員旅行は家族の分まで会社負担。20代の若手が活躍する足場専門会社・株式会社風見の採用サイト。">
+<meta name="description" content="福岡・糸島の足場とび職人 求人。未経験OK・月給25万円以上・完全週休2日制。道具・交通費・社用車支給、社員旅行は家族の分まで会社負担。質問だけの電話・LINEも歓迎。20代が活躍する足場専門会社・株式会社風見の採用サイト。">
 <link rel="canonical" href="https://www.kazami.biz/">
 
 <!-- OGP -->
@@ -291,6 +291,32 @@ p,.hero-sub,.cta .lead{text-wrap:pretty}
 .btn.tel{border:none;color:var(--haku-dim)}
 .btn.tel::after{background:var(--haku-dim)}
 .btn.tel:hover{color:var(--sumi)}
+.tel-note{font-size:.72rem;color:var(--haku-dim);letter-spacing:.08em;margin-top:.6rem;text-align:center}
+
+/* FAQ */
+.faq{background:var(--paper);padding:clamp(4rem,9vw,7rem) 1.5rem}
+.faq .wrap{max-width:760px;margin:0 auto}
+.faq .eyebrow{font-family:var(--en,inherit);font-size:.72rem;letter-spacing:.35em;text-transform:uppercase;color:var(--kou);margin-bottom:.6rem}
+.faq h2{font-size:clamp(1.5rem,3.6vw,2.2rem);letter-spacing:.14em;font-weight:500;margin-bottom:2.2rem}
+.faq details{border-bottom:1px solid var(--line);padding:1.05rem 0}
+.faq summary{cursor:pointer;font-weight:500;font-size:.96rem;letter-spacing:.06em;list-style:none;display:flex;gap:.85rem;align-items:baseline}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before{content:'Q';color:var(--kou);font-weight:700;font-family:var(--en,inherit)}
+.faq .a{padding:.65rem 0 .25rem 1.75rem;font-size:.9rem;color:var(--tetsu);line-height:2}
+
+/* 追従 電話バー(スマホ) */
+.telbar{position:fixed;left:0;right:0;bottom:0;z-index:940;display:none;align-items:center;gap:.9rem;
+  background:rgba(22,24,29,.96);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);
+  border-top:1px solid rgba(236,234,228,.15);
+  padding:.6rem .95rem calc(.6rem + env(safe-area-inset-bottom))}
+.telbar .msg{flex:1;min-width:0;color:var(--haku-dim);font-size:.66rem;line-height:1.55;letter-spacing:.04em}
+.telbar .msg b{display:block;color:var(--haku);font-size:.76rem;letter-spacing:.06em}
+.telbar a{flex:none;display:inline-flex;align-items:center;gap:.4rem;background:var(--kou);color:#fff;
+  padding:.72rem 1.1rem;font-size:.8rem;letter-spacing:.06em;border-radius:4px;font-weight:500}
+@media(max-width:820px){
+  .telbar{display:flex}
+  body{padding-bottom:64px}
+}
 .cta-note{margin-top:2rem;font-size:.85rem;color:var(--haku-dim);letter-spacing:.06em}
 .cta-tel{font-family:var(--en);font-size:1.4rem;letter-spacing:.1em;margin-top:.6rem;color:var(--haku)}
 
@@ -548,6 +574,47 @@ footer{background:#0f1115;color:var(--haku);padding:clamp(3rem,6vh,4.5rem) clamp
   </div>
 </section>
 
+<!-- よくある質問 -->
+<section class="faq" id="faq">
+  <div class="wrap reveal">
+    <div class="eyebrow">FAQ</div>
+    <h2>よくある質問</h2>
+    <details open>
+      <summary>未経験でも本当に大丈夫ですか？</summary>
+      <div class="a">大丈夫です。必要なのは「やってみたい」という気持ちだけで、仕事は現場で先輩が一から教えます。今いる若手も未経験からのスタートです。</div>
+    </details>
+    <details>
+      <summary>給料はいくらからですか？</summary>
+      <div class="a">月給25万円〜です。詳しい条件は、面談のときに包み隠さずお話しします。</div>
+    </details>
+    <details>
+      <summary>休みはありますか？</summary>
+      <div class="a">完全週休2日制です。しっかり休んで、しっかり働く体制です。</div>
+    </details>
+    <details>
+      <summary>自分で買う物はありますか？</summary>
+      <div class="a">道具は会社が支給、交通費も支給、社用車もあります。身ひとつで始められます。</div>
+    </details>
+    <details>
+      <summary>電話やLINEをしたら、断りにくくなりませんか？</summary>
+      <div class="a">なりません。質問だけの連絡も歓迎ですし、無理な勧誘はしません。「話を聞いてみるだけ」で大丈夫です。</div>
+    </details>
+  </div>
+</section>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"未経験でも本当に大丈夫ですか？","acceptedAnswer":{"@type":"Answer","text":"大丈夫です。必要なのは「やってみたい」という気持ちだけで、仕事は現場で先輩が一から教えます。今いる若手も未経験からのスタートです。"}},
+    {"@type":"Question","name":"給料はいくらからですか？","acceptedAnswer":{"@type":"Answer","text":"月給25万円〜です。詳しい条件は、面談のときに包み隠さずお話しします。"}},
+    {"@type":"Question","name":"休みはありますか？","acceptedAnswer":{"@type":"Answer","text":"完全週休2日制です。"}},
+    {"@type":"Question","name":"自分で買う物はありますか？","acceptedAnswer":{"@type":"Answer","text":"道具は会社が支給、交通費も支給、社用車もあります。身ひとつで始められます。"}},
+    {"@type":"Question","name":"電話やLINEをしたら、断りにくくなりませんか？","acceptedAnswer":{"@type":"Answer","text":"なりません。質問だけの連絡も歓迎ですし、無理な勧誘はしません。話を聞いてみるだけで大丈夫です。"}}
+  ]
+}
+</script>
+
 <!-- 応募CTA -->
 <section class="cta" id="cta">
   <div class="wrap reveal">
@@ -571,6 +638,7 @@ footer{background:#0f1115;color:var(--haku);padding:clamp(3rem,6vh,4.5rem) clamp
       </a>
       <a href="tel:092-332-3375" class="btn tel" onclick="gtag('event','tel_click')"><span>電話で問い合わせる　092-332-3375</span></a>
     </div>
+    <p class="tel-note">※質問だけの電話も大歓迎。出られない時は、後ほど折り返します。</p>
   </div>
 </section>
 
@@ -637,5 +705,11 @@ if(navToggle){
   hdr.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',closeNav));
 }
 </script>
+<!-- 追従 電話バー(スマホのみ表示) -->
+<div class="telbar">
+  <div class="msg"><b>質問だけの電話もOK</b>出られない時は折り返します</div>
+  <a href="tel:092-332-3375" onclick="gtag('event','tel_click')">📞 電話で聞いてみる</a>
+</div>
+
 </body>
 </html>
