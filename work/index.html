@@ -194,18 +194,11 @@ header{position:fixed;top:0;left:0;right:0;z-index:900;display:flex;justify-cont
 .card .no{font-family:var(--en);font-size:.72rem;letter-spacing:.2em;color:var(--kou)}
 .card h3{font-family:var(--min);font-size:1.18rem;font-weight:500;letter-spacing:.06em;margin:.5rem 0 .7rem}
 .card p{font-size:.88rem;color:var(--tetsu);line-height:1.95}
-
-/* 実績 */
-.works{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.works .lead2{font-size:.92rem;color:var(--tetsu);margin-top:.9rem;max-width:44em;line-height:1.95}
-.works .lead2 b{color:var(--kou);font-weight:600;font-size:1.05em}
-.works .wgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:2.1rem}
-@media(max-width:900px){.works .wgrid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:520px){.works .wgrid{grid-template-columns:1fr}}
-.wcell{background:var(--paper);border:1px solid var(--line);border-radius:5px;padding:1.25rem 1.3rem;border-top:3px solid var(--kou)}
-.wcell h3{font-family:var(--min);font-size:1rem;font-weight:500;letter-spacing:.04em;margin-bottom:.5rem;line-height:1.6}
-.wcell p{font-size:.83rem;color:var(--tetsu);line-height:1.9}
-.works .wnote{font-size:.79rem;color:var(--gin);margin-top:1.5rem;letter-spacing:.03em;line-height:1.9}
+.card p b{color:var(--kou);font-weight:600}
+.svc-lead{font-size:.93rem;color:var(--tetsu);margin-top:.9rem;max-width:46em;line-height:2}
+.svc-lead b{color:var(--sumi);font-weight:500}
+.svc-note{font-size:.83rem;color:var(--tetsu-soft);margin-top:1.6rem;line-height:2;letter-spacing:.03em}
+.svc-note b{color:var(--sumi);font-weight:500}
 
 /* 強み */
 .why{background:var(--sumi);color:var(--haku)}
@@ -311,53 +304,36 @@ footer .cr{font-family:var(--en);letter-spacing:.14em}
 <!-- 数字帯は削除（2026-08-18）。18名・5班・同時5現場・創業年は
      HEROのボタン下「.cred」行に集約したため、重複していた。 -->
 
-<!-- 対応工事 -->
+<!-- 対応工事＋実績（2026-08-20 統合。以前は「対応できる工事」と
+     「これまでに手がけた現場」の2セクションに分かれていた） -->
 <section class="svc"><div class="wrap">
-  <div class="eyebrow">Service</div>
-  <h2>対応できる工事</h2>
+  <div class="eyebrow">Service &amp; Works</div>
+  <h2>対応できる工事と、これまでの現場</h2>
+  <p class="svc-lead">枠組足場・次世代足場・支保工・鉄筋足場から、橋梁の吊り足場まで。<b>材料を持たない手間請け専門</b>として施工に専念しています。下記はいずれも<b>実際に手がけた現場</b>です。</p>
   <div class="cards">
     <div class="card">
       <div class="no">01</div>
-      <h3>枠組足場</h3>
-      <p>マンション・商業施設・工場など、大型物件の外部足場を中心に対応。組立から解体まで一貫して請け負います。</p>
+      <h3>マンション・集合住宅</h3>
+      <p>いちばん多い現場です。低層から高層まで、せり上げながら組み上げます。<b>階数の上限はありません</b>。枠組足場・次世代足場のどちらにも対応します。</p>
     </div>
     <div class="card">
       <div class="no">02</div>
-      <h3>次世代足場</h3>
-      <p>くさび式・次世代足場にも対応。狭所や複雑な形状の建物、工期の短い現場でも組み上げます。</p>
+      <h3>ビル・工場・物流施設</h3>
+      <p>市街地の狭い敷地に建つテナントビルから、班に分かれて端から端まで組む<b>大型の物流施設・工場</b>まで。広い現場ほど、人数と段取りが要ります。</p>
     </div>
     <div class="card">
       <div class="no">03</div>
-      <h3>支保工・鉄筋足場</h3>
-      <p>支保工、鉄筋足場、その他仮設工事にも対応。「この現場は組めるか」の段階からご相談ください。</p>
+      <h3>学校・公共施設・団地改修</h3>
+      <p>特別支援学校、中学校の改修、体育館。<b>600棟規模の団地改修</b>や市営住宅の実績もあります。使いながらの工事にも配慮した仮設計画で。</p>
     </div>
     <div class="card">
       <div class="no">04</div>
-      <h3>吊り足場（橋梁）</h3>
-      <p>横断歩道橋・橋梁の吊り足場、中段足場に対応。道路上や河川上など、条件の難しい現場の実績があります。</p>
+      <h3>橋梁・吊り足場</h3>
+      <p>横断歩道橋・橋りょうの<b>吊り足場、中段足場</b>。道路上や河川上など、条件の難しい現場の実績があります。対応できる会社は多くありません。</p>
     </div>
   </div>
-  <p style="font-size:.84rem;color:var(--tetsu-soft);margin-top:1.5rem;letter-spacing:.03em">
-    ※当社は<b style="font-weight:500">材料を持たない手間請け専門</b>です。施工に専念することで、技術と段取りの精度を高めています。
-  </p>
-</div></section>
-
-<!-- 実績 -->
-<section class="works"><div class="wrap">
-  <div class="eyebrow">Works</div>
-  <h2>これまでに手がけた現場</h2>
-  <p class="lead2">マンションの外部足場から橋梁の吊り足場まで、<b>条件の違う現場を続けて受けています</b>。同じ型の物件ばかりではないため、「これは組めるか」の相談から入っていただいて構いません。</p>
-  <div class="wgrid">
-    <div class="wcell"><h3>分譲マンション・集合住宅</h3><p>新築の外部足場。5〜11階建てを中心に、せり上げでの施工も行います。</p></div>
-    <div class="wcell"><h3>事務所・テナントビル</h3><p>市街地の狭い敷地での新築足場。鉄筋足場から外部足場まで一貫。</p></div>
-    <div class="wcell"><h3>学校・体育館・公共施設</h3><p>特別支援学校、中学校の改修、体育館・博物館・武道館など。</p></div>
-    <div class="wcell"><h3>団地・住宅の改修</h3><p>600棟規模の団地改修、市営住宅の改修足場の実績があります。</p></div>
-    <div class="wcell"><h3>物流施設・大型工場</h3><p>物流センター、大型工場の外部足場。広い面積を班で分けて進めます。</p></div>
-    <div class="wcell"><h3>橋梁・横断歩道橋</h3><p>吊り足場・中段足場。道路上や河川上など条件の難しい現場も。</p></div>
-    <div class="wcell"><h3>有料老人ホーム・医療系</h3><p>使いながらの工事にも配慮した仮設計画で対応します。</p></div>
-    <div class="wcell"><h3>解体に伴う足場</h3><p>解体のみのご依頼にも対応。ビル・住宅・体育館の実績があります。</p></div>
-  </div>
-  <p class="wnote">※お客様との契約上、物件名・元請様名の公開は控えております。同種の実績の詳細は、お問い合わせ時に個別にご説明します。</p>
+  <p class="svc-note">上記のほか、<b>解体に伴う足場のみ</b>のご依頼にも対応します。同じ型の物件ばかりではないので、「これは組めるか」のご相談から入っていただいて構いません。<br>
+  ※お客様との契約上、物件名・元請様名の公開は控えております。同種の実績の詳細は、お問い合わせ時に個別にご説明します。</p>
 </div></section>
 
 <!-- 強み -->
