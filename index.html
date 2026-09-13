@@ -51,6 +51,44 @@
 }
 </script>
 
+<!-- 地域ビジネスとしての会社情報（MEO対策・2026-09-01追加）
+     geo（緯度経度）と hasMap・sameAs は、Googleビジネスプロフィール確認後に追記する -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "GeneralContractor",
+  "@id": "https://www.kazami.biz/#business",
+  "name": "株式会社風見",
+  "legalName": "株式会社風見",
+  "description": "福岡・糸島の鳶・足場工事専門会社。枠組足場・次世代足場の組立/解体を、ビル・施設・スタジアムなど大型物件を中心に手がけています。",
+  "url": "https://www.kazami.biz/",
+  "image": "https://www.kazami.biz/images/ogp.jpg",
+  "logo": "https://www.kazami.biz/images/logo-mark.png",
+  "telephone": "+81-92-332-3375",
+  "address": {
+    "@type": "PostalAddress",
+    "postalCode": "819-1564",
+    "addressRegion": "福岡県",
+    "addressLocality": "糸島市",
+    "streetAddress": "大門165-13",
+    "addressCountry": "JP"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "opens": "08:00",
+    "closes": "17:00"
+  },
+  "areaServed": [
+    {"@type":"City","name":"福岡市"},
+    {"@type":"City","name":"糸島市"},
+    {"@type":"City","name":"北九州市"}
+  ],
+  "foundingDate": "2004",
+  "knowsAbout": ["足場工事","枠組足場","次世代足場","鳶工事"]
+}
+</script>
+
 <!-- Google Analytics (GA4) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-27CLGPW657"></script>
 <script>
@@ -635,6 +673,9 @@ footer{background:#0f1115;color:var(--haku);padding:clamp(3rem,6vh,4.5rem) clamp
     <div class="co-row"><div class="k">Founded</div><div class="v">平成16年（2004年）個人事業として創業<br><small>平成29年（2017年）株式会社風見へ組織変更</small></div></div>
     <div class="co-row"><div class="k">Business</div><div class="v">足場工事（枠組足場・次世代足場）、支保工 ほか仮設工事</div></div>
     <div class="co-row"><div class="k">Tel</div><div class="v">092-332-3375（受付 8:00–17:00 / 日曜除く）</div></div>
+    <div class="co-map" style="margin-top:1.4rem;border-radius:10px;overflow:hidden;line-height:0">
+      <iframe src="https://www.google.com/maps?q=%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%B3%B8%E5%B3%B6%E5%B8%82%E5%A4%A7%E9%96%80165-13&output=embed&z=15" width="100%" height="300" style="border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="株式会社風見（福岡県糸島市大門165-13）の地図"></iframe>
+    </div>
     <p class="to-work">足場工事のご依頼・協力業者に関するお問い合わせは
       <a href="/work/">こちらのページ</a>をご覧ください。</p>
   </div>
