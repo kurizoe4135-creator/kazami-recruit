@@ -1,6 +1,1 @@
-{
-  "redirects": [
-    { "source": "/recruit", "destination": "/", "permanent": true },
-    { "source": "/recruit/", "destination": "/", "permanent": true }
-  ]
-}
+{}
