@@ -1,0 +1,14 @@
+# バックアップ（Dropbox側に版があるので git には載せない）
+_バックアップ/
+*.bak
+*.bak_*
+index.html.bak_*
+
+# ローカル作業用
+.claude/
+server.js
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
